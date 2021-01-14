@@ -91,7 +91,7 @@
       </article>
         
       <article>
-        <h2>More Embeds<h2>
+        <h2>More Embeds</h2>
           <ul>
             <li>Video</li>
             <li>Audio</li>
@@ -104,27 +104,37 @@
           <video width="320" height="240" controls>
             <source src="rickroll.mp4" type="video/mp4"> <!-- Dead link -->
           </video>
-          
+        
+          <br>
+        
           <audio controls>
             <source src="beats.ogg" type="audio/ogg"> <!-- Dead link -->
           </audio>
-
+        
+          <br>
+        
           <picture>
             <source media="(min-width:650px)" srcset="bigimage.jpg"> <!-- Dead link -->
             <source media="(min-width:465px)" srcset="mediumimage.jpg"> <!-- Dead link -->
             <img src="smallimage.jpg" alt="I don't actually know what this is"> <!-- Dead link -->
           </picture>
-          
+           
+          <br>
+               
           <figure>
             <img src="anotherimage.jpg" alt="Another image I don't know about"> <!-- Dead link -->
             <figcaption>Fig.1 - A missing image</figcaption>
           </figure>
-          
+               
+          <br>
+           
           <svg width="400" height="180">
             <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
             style="fill:blue;stroke:red;stroke-width:2;opacity:0.75" />
           </svg>
-          
+                  
+          <br>
+        
           <canvas id="canvas" width="200" height="100"></canvas>
       </article>
           
@@ -171,27 +181,39 @@
           <input type="text" id="first" name="first">
           <label for="last">Last name:</label>
           <input type="text" id="last" name="last">
-          
+                 
+          <br>
+         
           <label for="email">Email address:</label>
           <input type="email" id="email" name="email">
-          
+                  
+          <br>
+        
           <label for="ssn">Social Security number:</label>
           <input type="password" id="ssn" name="ssn">
-
+        
+          <br>
+        
           <input type="radio" id="red" name="color" value="red">
           <label for="red">Red</label>
           <input type="radio" id="blue" name="color" value="blue">
           <label for="blue">Blue</label>
           <input type="radio" id="other" name="color" value="other">
           <label for="other">Other</label>
-          
+                  
+          <br>
+        
           <label for="leastcolor">Select your LEAST favorite color:</label>
           <input type="color" id="leastcolor" name="leastcolor">
-          
+                  
+          <br>
+        
           <textarea name="message" rows="10" cols="30">
             Type your life story here.
           </textarea>
-          
+                  
+          <br>
+        
           <label for="birthday">Birthday:</label>
           <input type="date" id="birthday" name="birthday">
         </fieldset>
@@ -211,7 +233,9 @@
               <option value="c#">C#</option>
             </optgroup>
           </select>
-          
+                  
+          <br>
+        
           <input list="browser" name="browser">
           <datalist id="browser">
             <option value="Microsoft Edge">
@@ -220,17 +244,23 @@
             <option value="Microsoft Edge">
             <option value="Microsoft Edge">
           </datalist>
-          
+                  
+          <br>
+        
           <label for="scale">On a scale from 1 to 5, how cool are you?</label>
           <input type="range" id="scale" name="scale" min="1" max="5">
 
         </fieldset>
+                
+        <br>
         
         <input type="checkbox" id="soul" name="soul" value="agree" required>
         <label for="soul">I agree to sell my soul.</label>
         
         <input type="hidden" id="id" name="id" value="001">
-
+        
+        <br>
+        
         <input type="reset">
         <input type="submit" value="Submit">
       </form>
