@@ -1,2 +1,246 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>My Website | Luke Myers</title>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Luke Myers' Website">
+    <meta name="keywords" content="19lmyers, website">
+    <meta name="author" content="Luke Myers">
+    
+    <link rel="stylesheet" href="styles.css"> <!-- Dead link -->
+  </head>
+  
+  <body>
+ 
+    <header>
+      <h1>Luke Myers</h1>
+      
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a> <!-- Dead link -->
+        <a href="/projects/">Projects</a> <!-- Dead link -->
+      </nav>
+    </header>
+    
+    <main>
+      <section>
+        <h2>
+          It was a dark and stormy night.
+        </h2>
+        
+        <hr>
+        
+        <p>
+          Welcome to my <span class="awesome">awesome</span> website!
+        </p>
+        
+        <p>
+          Here you'll find some <b>awesome</b> filler text for this <i>totally rad</i> assignment.
+          I hope you <strong>seriously</strong> enjoy reading this <em>really cool</em> filler text that isn't 
+          <br> 
+          boring 
+          <br> 
+          at all!
+        </p>
+        
+      </section>
+      
+      <article>
+        <h2>Top Ten Code Tips</h2>
+        <h4>(Just kidding, there's only one.)</h4>
+        
+        <ol>
+          <li>Write clean code</li>
+          <li>Throw it away</li>
+        </ol>
+        
+        <code>
+          ViewCompat.setOnApplyWindowInsetsListener(binding.buttonMatchScout, (v, insets) -> {
+              CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) v.getLayoutParams();
+              params.bottomMargin = InsetUtils.dpToPixel(16, getContext()) + insets.getSystemWindowInsetBottom();
+              return insets;
+          });
+        </code>
+        
+        <pre>
+          Insets schmimsets
+        </pre>
+        
+        <button type="button">Read more about wonderful insets</button>
+      </article>
+      
+      <article>
+        <h2>Super Secret Settings</h2>
+        <details>
+          <summary>Click to reveal</summary>
+          
+          <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  frameborder="0" 
+                  allowfullscreen>
+          </iframe>
+          
+          <pre>
+            Trololololol ol 
+                         ol ol
+          </pre>
+      </article>
+        
+      <article>
+        <h2>More Embeds<h2>
+          <ul>
+            <li>Video</li>
+            <li>Audio</li>
+            <li>Picture</li>
+            <li>Figure</li>
+            <li>SVG</li>
+            <li>Canvas</li>
+          </ul>
+          
+          <video width="320" height="240" controls>
+            <source src="rickroll.mp4" type="video/mp4"> <!-- Dead link -->
+          </video>
+          
+          <audio controls>
+            <source src="beats.ogg" type="audio/ogg"> <!-- Dead link -->
+          </audio>
+
+          <picture>
+            <source media="(min-width:650px)" srcset="bigimage.jpg"> <!-- Dead link -->
+            <source media="(min-width:465px)" srcset="mediumimage.jpg"> <!-- Dead link -->
+            <img src="smallimage.jpg" alt="I don't actually know what this is"> <!-- Dead link -->
+          </picture>
+          
+          <figure>
+            <img src="anotherimage.jpg" alt="Another image I don't know about"> <!-- Dead link -->
+            <figcaption>Fig.1 - A missing image</figcaption>
+          </figure>
+          
+          <svg width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+            style="fill:blue;stroke:red;stroke-width:2;opacity:0.75" />
+          </svg>
+          
+          <canvas id="canvas" width="200" height="100"></canvas>
+      </article>
+          
+      <article>
+        <h2>My First Table</h2>
+        <table>
+           <caption>Table</caption>
+          <colgroup>
+            <col span="2" style="background-color:orange">
+            <col style="background-color:lightblue">
+          </colgroup>
+          <tr>
+            <th>First</th>
+            <th>Second</th>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>30</td>
+          </tr>
+        </table>
+        
+        <template>
+          <h3>This is hidden</h3>
+          <p>This tag is useless and downright bad.</p>
+        </template>
+      </article>
+    </main>
+    
+    <aside>
+      <h3>By the way...</h3>
+      
+      <p>
+        Want to know more? Join our newsletter!
+      </p>
+      
+      <form>
+        <fieldset>
+          <legend>Basic:</legend>
+          <label for="first">First name:</label>
+          <input type="text" id="first" name="first">
+          <label for="last">Last name:</label>
+          <input type="text" id="last" name="last">
+          
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email">
+          
+          <label for="ssn">Social Security number:</label>
+          <input type="password" id="ssn" name="ssn">
+
+          <input type="radio" id="red" name="color" value="red">
+          <label for="red">Red</label>
+          <input type="radio" id="blue" name="color" value="blue">
+          <label for="blue">Blue</label>
+          <input type="radio" id="other" name="color" value="other">
+          <label for="other">Other</label>
+          
+          <label for="leastcolor">Select your LEAST favorite color:</label>
+          <input type="color" id="leastcolor" name="leastcolor">
+          
+          <textarea name="message" rows="10" cols="30">
+            Type your life story here.
+          </textarea>
+          
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+        </fieldset>
+        
+        <fieldset>
+          <legend>Esoteric</legend>
+          <label for="lang">Favorite programming language:</label>
+          <select id="lang" name="lang">
+            <optgroup label="Basic">
+              <option value="java" selected>Java</option>
+              <option value="c/c++">C/C++</option>
+              <option value="python">Python (eew)</option>
+            </optgroup>
+            <optgroup label="Advanced">
+              <option value="go">Go</option>
+              <option value="rust">Rust</option>
+              <option value="c#">C#</option>
+            </optgroup>
+          </select>
+          
+          <input list="browser" name="browser">
+          <datalist id="browser">
+            <option value="Microsoft Edge">
+            <option value="Microsoft Edge">
+            <option value="Microsoft Edge">
+            <option value="Microsoft Edge">
+            <option value="Microsoft Edge">
+          </datalist>
+          
+          <label for="scale">On a scale from 1 to 5, how cool are you?</label>
+          <input type="range" id="scale" name="scale" min="1" max="5">
+
+        </fieldset>
+        
+        <input type="checkbox" id="soul" name="soul" value="agree" required>
+        <label for="soul">I agree to sell my soul.</label>
+        
+        <input type="hidden" id="id" name="id" value="001">
+
+        <input type="reset">
+        <input type="submit" value="Submit">
+      </form>
+    </aside>
+    
+    <footer>
+      <div class="center">
+        Made with 🌟 by Luke Myers
+      </div>
+    </footer>
+  </body>
+  
 </html>
