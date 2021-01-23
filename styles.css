@@ -1,0 +1,43 @@
+* {
+
+}
+
+.my-class {
+
+}
+
+.my-class .my-second-class {
+
+}
+
+.my-class > .my-third-class {
+
+}
+
+p + p {
+
+}
+
+p ~ p {
+
+}
+
+code.my-class {
+
+}
+
+#my-id {
+
+}
+
+h2, h3 {
+
+}
+
+input[type=button] {
+  
+}
+
+a:hover {
+
+}
