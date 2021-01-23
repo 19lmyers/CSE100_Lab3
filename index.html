@@ -33,8 +33,8 @@
     </header>
     
     <main>
-      <section>
-        <h2>
+      <section class="my-class">
+        <h2 class="my-third-class">
           It was a dark and stormy night.
         </h2>
         
@@ -45,7 +45,7 @@
         </p>
         
         <p>
-          Here you'll find some <b>awesome</b> filler text for this <i>totally rad</i> assignment.
+          Here you'll find some <b class="my-second-class">awesome</b> filler text for this <i>totally rad</i> assignment.
           I hope you <strong>seriously</strong> enjoy reading this <em>really cool</em> filler text that isn't 
           <br> 
           boring 
@@ -55,7 +55,7 @@
         
       </section>
       
-      <article>
+      <article id="my-id">
         <h2>Top Ten Code Tips</h2>
         <h4>(Just kidding, there's only one.)</h4>
         
@@ -64,7 +64,7 @@
           <li>Throw it away</li>
         </ol>
         
-        <code>
+        <code class="my-class">
           ViewCompat.setOnApplyWindowInsetsListener(binding.buttonMatchScout, (v, insets) -> {
               CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) v.getLayoutParams();
               params.bottomMargin = InsetUtils.dpToPixel(16, getContext()) + insets.getSystemWindowInsetBottom();
